@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Website title -->
+    <title>GameVerse</title>
+    <!-- Google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@300..700&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Bootstrap file -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-SgOJa3DmI69IUzQ2PVdRZhwQ+dy64/BUtbMJw1MZ8t5HZApcHrRKUc4W0kG879m7"
+      crossorigin="anonymous"
+    />
+    <!-- Main CSS file -->
+    <link rel="stylesheet" href="./assetes/css/main.css" />
+  </head>
+  <body>
+    <!-- Start Header -->
+    <header>
+      <nav class="navbar nav--links navbar-expand-lg p-0">
+        <div class="container header-container">
+          <div class="d-flex align-items-center gap-2">
+            <img
+              class="logo-img"
+              src="./assetes/images/logo.png"
+              alt="Game Reviews logo"
+            />
+            <h1 class="navbar-brand m-0 p-0 text-white text-uppercase fw-bold">
+              Game Reviews
+            </h1>
+          </div>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarScroll"
+            aria-controls="navbarScroll"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarScroll">
+            <ul
+              class="categories navbar-nav ms-auto my-2 my-lg-0 navbar-nav-scroll"
+            >
+              <li class="nav-item">
+                <button class="nav-link active" data-category="mmorpg">
+                  Mmorpg
+                </button>
+              </li>
+              <li class="nav-item">
+                <button class="nav-link" data-category="shooter">
+                  Shooter
+                </button>
+              </li>
+              <li class="nav-item">
+                <button class="nav-link" data-category="sailing">
+                  Sailing
+                </button>
+              </li>
+              <li class="nav-item">
+                <button class="nav-link" data-category="permadeath">
+                  Permadeath
+                </button>
+              </li>
+              <li class="nav-item">
+                <button class="nav-link" data-category="superhero">
+                  Superhero
+                </button>
+              </li>
+              <li class="nav-item">
+                <button class="nav-link" data-category="pixel">Pixel</button>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <!-- End Header -->
+
+    <!-- Start Main -->
+    <main>
+      <!-- Start Games Section -->
+      <section class="games py-5 mt-4">
+        <div class="container">
+          <div
+            class="games-wrapper row row-cols-1 row-cols-md-2 row-cols-lg-3 row-cols-xl-4 g-4"
+          ></div>
+        </div>
+      </section>
+      <!-- End Games Section -->
+
+      <!-- Start Game-Details Section -->
+      <section class="game-details d-none">
+        <div class="container details--container">
+          <div class="d-flex justify-content-between align-items-center">
+            <h2 class="text-white fw-bold mb-0 py-4">Game Details</h2>
+            <button class="btn--close">&#10006;</button>
+          </div>
+          <div class="row row--details g-4">
+            <div class="col-md-4">
+              <div class="inner">
+                <img
+                  class="w-100"
+                  src="./assetes/images/remove.jpg"
+                  alt="Game image"
+                />
+              </div>
+            </div>
+            <div class="col-md-8">
+              <h3 class="game-title text-white">Title: RuneScape</h3>
+              <p class="text-white fw-bold">
+                Category:
+                <span class="game-category badge"> MMORPG</span>
+              </p>
+              <p class="text-white fw-bold">
+                Platform:
+                <span class="game-platform badge"> Windows, Web Browser</span>
+              </p>
+              <p class="text-white fw-bold">
+                Status:
+                <span class="status badge"> Live</span>
+              </p>
+              <p class="game-description">
+                Runescape, is a popular free to play 3D browser based fantasy
+                MMORPG boasting a huge player base and a massive world with 15
+                years of content. Developed by Jagex, the game does not require
+                players to choose a specific class. Subsequently, you are not
+                limited in terms of what kind of hero you want to play. The
+                browser MMORPG features 26 distinct skills for players to level.
+                Players do not allocate points to upgrade certain skills.
+                Rather, their abilities are enhanced by performing certain
+                actions like mining ore, casting spells of fishing. The world of
+                Gelinor is divided into various kingdoms, regions and cities.
+                Each regions features different loot, monsters and quests to
+                complete. You explore this vast world via a customizable avatar.
+                The game allows you to interact with other players in various
+                different ways including the in-game chat system, combat and
+                mini-games that are either competitive or collaborative. Due to
+                the randomized elements in the Runescape’s dungeons, gameplay
+                remains engaging rather than repetitive. You can choose to brave
+                the world of Gelinor alone, or collaborate with other players to
+                take down especially challenging bosses. Should you so choose,
+                you can also engage in PvP combat. While it does not follow a
+                linear story, the game contains myriad quests and deep,
+                immersive narrative to keep players engaged. Released in 2001,
+                the game is consistently updated to add new content, new
+                features and various special events. The third iteration of the
+                game, known as RuneScape 3 (RS3), is an enhanced version of the
+                RuneScape HD update. This major upgrade was launched on Monday
+                July 22nd 2013, bringing even more features such as a new
+                engine, customisable interfaces and new content. But if you’re a
+                RuneScape veteran looking for the original version, the Old
+                School RuneScape is still available.
+              </p>
+              <button class="show-game btn text-white fw-bold">
+                Show Game
+              </button>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- End Game-Details Section -->
+
+      <button class="scroll-top d-none">&#11165;</button>
+    </main>
+    <!-- End Main -->
+    <div class="spinner d-none"><span class="loader"></span></div>
+
+    <!-- Bootstrap file -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-k6d4wzSIapyDyv1kpU366/PK5hCdSbCRGRCMv+eplOQJWyd1fbcAu9OCUj5zNLiq"
+      crossorigin="anonymous"
+    ></script>
+
+    <!-- Main JS File -->
+    <script src="./assetes/js/index.js"></script>
+  </body>
+</html>
